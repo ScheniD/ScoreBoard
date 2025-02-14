@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soccer Scoreboard</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Theme Switch Button -->
+  <div class="theme-switch">
+    <button onclick="toggleTheme()">
+      <span class="icon"></span>Dark Theme
+    </button>
+  </div>
+
+  <!-- Scoreboard Container -->
+  <div class="scoreboard">
+    <!-- Home Team -->
+    <div class="team" id="team-home">
+      <h2>Home</h2>
+      <div class="score" id="score-home">0</div>
+      <button onclick="addScore('home')">+1 </button>
+    </div>
+
+    <!-- Away Team -->
+    <div class="team" id="team-away">
+      <h2>Away</h2>
+      <div class="score" id="score-away">0</div>
+      <button onclick="addScore('away')">+1 </button>
+    </div>
+  </div>
+
+  <!-- Reset Button (centered below the scoreboard) -->
+  <div class="reset">
+    <button onclick="resetScore()">Reset Score</button>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
